@@ -28,46 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Location = new System.Drawing.Point(137, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 47);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(137, 12);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(225, 47);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Tạo đơn hàng";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnDel
             // 
-            this.button2.Location = new System.Drawing.Point(137, 79);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 47);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "button1";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDel.Location = new System.Drawing.Point(137, 79);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(225, 47);
+            this.btnDel.TabIndex = 0;
+            this.btnDel.Text = "Hủy đơn hàng";
+            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
-            // button3
+            // btnClose
             // 
-            this.button3.Location = new System.Drawing.Point(137, 154);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(225, 47);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "button1";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnClose.Location = new System.Drawing.Point(137, 154);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(225, 47);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "Thoát";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // OrderManagerFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 213);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnDel);
+            this.Controls.Add(this.btnAdd);
             this.Name = "OrderManagerFrm";
             this.Text = "OrderManagerFrm";
             this.ResumeLayout(false);
@@ -76,8 +79,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnDel;
+        private System.Windows.Forms.Button btnClose;
     }
 }
